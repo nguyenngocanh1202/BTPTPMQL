@@ -1,0 +1,14 @@
+D:\download\DemoMVC\DemoMVC\bin\Debug\net9.0\DemoMVC.exe
+D:\download\DemoMVC\DemoMVC\bin\Debug\net9.0\DemoMVC.deps.json
+D:\download\DemoMVC\DemoMVC\bin\Debug\net9.0\DemoMVC.runtimeconfig.json
+D:\download\DemoMVC\DemoMVC\bin\Debug\net9.0\DemoMVC.dll
+D:\download\DemoMVC\DemoMVC\bin\Debug\net9.0\DemoMVC.pdb
+D:\download\DemoMVC\DemoMVC\obj\Debug\net9.0\DemoMVC.GeneratedMSBuildEditorConfig.editorconfig
+D:\download\DemoMVC\DemoMVC\obj\Debug\net9.0\DemoMVC.AssemblyInfoInputs.cache
+D:\download\DemoMVC\DemoMVC\obj\Debug\net9.0\DemoMVC.AssemblyInfo.cs
+D:\download\DemoMVC\DemoMVC\obj\Debug\net9.0\DemoMVC.csproj.CoreCompileInputs.cache
+D:\download\DemoMVC\DemoMVC\obj\Debug\net9.0\DemoMVC.dll
+D:\download\DemoMVC\DemoMVC\obj\Debug\net9.0\refint\DemoMVC.dll
+D:\download\DemoMVC\DemoMVC\obj\Debug\net9.0\DemoMVC.pdb
+D:\download\DemoMVC\DemoMVC\obj\Debug\net9.0\DemoMVC.genruntimeconfig.cache
+D:\download\DemoMVC\DemoMVC\obj\Debug\net9.0\ref\DemoMVC.dll
