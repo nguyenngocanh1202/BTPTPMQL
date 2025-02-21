@@ -1,0 +1,26 @@
+@model DemoMVC.Models.Invoice
+
+@{
+    ViewData["Title"] = "Tính tiền hóa đơn";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Index" method="post">
+    <div class="form-group">
+        <label for="Quantity">Số lượng:</label>
+        <input type="text" class="form-control" id="Quantity" name="Quantity" asp-for="Quantity" />
+    </div>
+    <div class="form-group">
+        <label for="UnitPrice">Đơn giá:</label>
+        <input type="text" class="form-control" id="UnitPrice" name="UnitPrice" asp-for="UnitPrice" />
+    </div>
+    <button type="submit" class="btn btn-primary">Tính tiền</button>
+</form>
+
+@if (ViewBag.infoInvoice != null)
+{
+    <div class="alert alert-info mt-3">
+        @ViewBag.infoInvoice
+    </div>
+}
