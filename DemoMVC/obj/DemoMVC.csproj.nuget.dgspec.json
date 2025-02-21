@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\download\\DemoMVC\\DemoMVC\\DemoMVC.csproj": {}
+    "E:\\BTPTPMQL\\DemoMVC\\DemoMVC.csproj": {}
   },
   "projects": {
-    "D:\\download\\DemoMVC\\DemoMVC\\DemoMVC.csproj": {
+    "E:\\BTPTPMQL\\DemoMVC\\DemoMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\download\\DemoMVC\\DemoMVC\\DemoMVC.csproj",
+        "projectUniqueName": "E:\\BTPTPMQL\\DemoMVC\\DemoMVC.csproj",
         "projectName": "DemoMVC",
-        "projectPath": "D:\\download\\DemoMVC\\DemoMVC\\DemoMVC.csproj",
-        "packagesPath": "C:\\Users\\fhfj\\.nuget\\packages\\",
-        "outputPath": "D:\\download\\DemoMVC\\DemoMVC\\obj\\",
+        "projectPath": "E:\\BTPTPMQL\\DemoMVC\\DemoMVC.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "E:\\BTPTPMQL\\DemoMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\fhfj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -55,11 +55,14 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
