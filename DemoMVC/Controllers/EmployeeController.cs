@@ -18,7 +18,7 @@ namespace DemoMVC.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            var model = await _context.Employees.ToListAsync();
+            var model = await _context.Employee.ToListAsync();
             return View(model);
         }
         public IActionResult Create()
@@ -51,7 +51,7 @@ namespace DemoMVC.Controllers
                 return NotFound();
             }
 
-            var employee = await _context.Employees.FindAsync(id);
+            var employee = await _context.Employee.FindAsync(id);
             if (employee != null)
             {
                 return NotFound();
@@ -97,7 +97,7 @@ namespace DemoMVC.Controllers
                 return NotFound();
             }
 
-            var employee = await _context.Employees
+            var employee = await _context.Employee
             .FirstOrDefaultAsync(m => m.EmployeeId == id);
             if (employee == null)
             {
@@ -111,10 +111,10 @@ namespace DemoMVC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var employee = await _context.Employees.FindAsync(id);
+            var employee = await _context.Employee.FindAsync(id);
             if (employee != null)
             {
-                _context.Employees.Remove(employee);
+                _context.Employee.Remove(employee);
                 await _context.SaveChangesAsync();
             }
             return RedirectToAction(nameof(Index));
@@ -122,7 +122,7 @@ namespace DemoMVC.Controllers
 
         private bool EmployeeExists(int id)
         {
-            return _context.Employees.Any(e => e.EmployeeId == id);
+            return _context.Employee.Any(e => e.EmployeeId == id);
         }
     }
 }

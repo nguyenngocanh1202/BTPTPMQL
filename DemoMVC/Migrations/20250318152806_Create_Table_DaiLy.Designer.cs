@@ -2,6 +2,7 @@
 using DemoMVC.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -9,9 +10,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DemoMVC.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250318152806_Create_Table_DaiLy")]
+    partial class Create_Table_DaiLy
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.3");
@@ -75,20 +78,6 @@ namespace DemoMVC.Migrations
                     b.HasKey("EmployeeId");
 
                     b.ToTable("Employee");
-                });
-
-            modelBuilder.Entity("DemoMVC.Models.HeThongPhanPhoi", b =>
-                {
-                    b.Property<string>("MaHTPP")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("TenHTPP")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("MaHTPP");
-
-                    b.ToTable("HeThongPhanPhoi");
                 });
 
             modelBuilder.Entity("DemoMVC.Models.Person", b =>
