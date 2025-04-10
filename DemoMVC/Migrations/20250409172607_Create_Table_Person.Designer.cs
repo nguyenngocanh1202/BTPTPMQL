@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DemoMVC.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250314115203_Create_Table_Person")]
+    [Migration("20250409172607_Create_Table_Person")]
     partial class Create_Table_Person
     {
         /// <inheritdoc />
@@ -18,6 +18,36 @@ namespace DemoMVC.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.3");
+
+            modelBuilder.Entity("DemoMVC.Models.DaiLy", b =>
+                {
+                    b.Property<string>("MaDaiLy")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("DiaChi")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("DienThoai")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("MaHTPP")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("NguoiDaiDien")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("TenDaiLy")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("MaDaiLy");
+
+                    b.ToTable("DaiLy");
+                });
 
             modelBuilder.Entity("DemoMVC.Models.Employee", b =>
                 {
@@ -48,6 +78,20 @@ namespace DemoMVC.Migrations
                     b.HasKey("EmployeeId");
 
                     b.ToTable("Employee");
+                });
+
+            modelBuilder.Entity("DemoMVC.Models.HeThongPhanPhoi", b =>
+                {
+                    b.Property<string>("MaHTPP")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("TenHTPP")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("MaHTPP");
+
+                    b.ToTable("HeThongPhanPhoi");
                 });
 
             modelBuilder.Entity("DemoMVC.Models.Person", b =>
